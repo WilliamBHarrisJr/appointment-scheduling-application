@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.software2.LoginController">
+   <children>
+      <Label fx:id="lbLogin" layoutX="193.0" layoutY="136.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfUser" layoutX="153.0" layoutY="184.0" promptText="Username" />
+      <PasswordField fx:id="pfPassword" layoutX="153.0" layoutY="237.0" promptText="Password" />
+      <Button fx:id="btnSubmit" layoutX="153.0" layoutY="289.0" mnemonicParsing="false" onAction="#login" text="Submit" />
+      <Button fx:id="btnExit" layoutX="250.0" layoutY="289.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="54.0" text="Exit" />
+      <Label fx:id="lbUsername" layoutX="85.0" layoutY="188.0" text="Username" textAlignment="RIGHT" />
+      <Label fx:id="lbPassword" layoutX="85.0" layoutY="241.0" text="Password" textAlignment="RIGHT" />
+      <Label fx:id="lbLoginFailed" layoutX="100.0" layoutY="347.0" prefHeight="20.0" prefWidth="291.0" text="Username or password is incorrect" textFill="RED" visible="false">
+         <font>
+            <Font size="14" />
+         </font>
+      </Label>
+      <Label fx:id="lbTimeZone" layoutX="45.0" layoutY="26.0" text="Time Zone:" textAlignment="RIGHT" textFill="dimgray" />
+      <Label fx:id="lbLocation" layoutX="113.0" layoutY="26.0" text="Label" textFill="darkGray" />
+      <Label fx:id="lbLanguage" layoutX="295.0" layoutY="26.0" text="Language:" textAlignment="RIGHT" textFill="dimgray" />
+      <Label fx:id="lbSystemLanguage" layoutX="363.0" layoutY="26.0" text="Label" textFill="darkGray" />
+      <ImageView fitHeight="116.0" fitWidth="85.0" layoutX="186.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/booking.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
